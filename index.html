@@ -11,9 +11,11 @@
     background-image: url(https://pbs.twimg.com/media/DYvcDMAXcAEStW6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: green;
-    height: 1000px;
+    height: 100%;
     margin: 0;
+    
   }
   
   .term {
@@ -51,6 +53,7 @@
   .eee {
   	display: flex; 
   	justify-content: space-around;
+    
   }
   
   .eee:hover .dropdownshort, .eee:focus .dropdownshort {
@@ -80,17 +83,54 @@ $(document).ready(function(){
 		<p class="term">SHORT TERM</p>
 	</button>
 	<span class="dropdownshort">
-    	<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-		<label for="vehicle1">Catch up on missing work</label>
-        <br>
-		<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-		<label for="vehicle2">Find internship in Japan</label>
-        <br>
-		<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-		<label for="vehicle3">Do well in Fall 2022 semester</label>
-        <br>
-        <input type="checkbox" id="vehicle4" name="vehicle4">
-        <label for="vehicle4">Take care of myself</label>
+    	<div class="checkbox-container">
+  			<ul>
+    			<li>
+            		<div class="expandable-checkbox">
+      					<input type="checkbox" class="expandable-checkbox-main-option"> Catch up on missing work</label>
+      						<ul>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> CS 15</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Bio Bases of Psychopathology</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Stats for Bio Sci</label></li>
+                        		<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Web Programming</label></li>
+      						</ul>
+            		</div>
+    			</li>
+    			<li>
+                	<div class="expandable-checkbox">
+      					<input type="checkbox" class="expandable-checkbox-main-option"> Internship in Tokyo for Summer 2023</label>
+      						<ul>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Finish Career Forum Fill Out</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Apply</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Interview</label></li>
+                        		<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Confirm Job Offer/Accept</label></li>
+      						</ul>
+                	</div>
+    			</li>
+    			<li>
+                	<div class="expandable-checkbox">
+      					<input type="checkbox" class="expandable-checkbox-main-option"> Do well in Fall 2022 semester</label>
+      						<ul>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Get Okay Grades</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Do JumboCode</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Get job</label></li>
+                        		<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Make up work</label></li>
+      						</ul>
+    				</div>
+            	</li>
+    			<li>
+                	<div class="expandable-checkbox">
+      					<input type="checkbox" class="expandable-checkbox-main-option"> Take care of myself</label>
+      						<ul>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Skincare</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Eat 3 meals per day</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Enough sleep</label></li>
+                        		<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Relax</label></li>
+      						</ul>
+    			</li>
+  			</ul>
+		</div>
+
         <p>http://www.home-designing.com/dark-decor-with-alluring-lighting</p>
 	</span>
 </div>
@@ -102,18 +142,52 @@ $(document).ready(function(){
 		<p class="term">LONG TERM</p>
 	</button>
 <span class="dropdownshort">
-    	<div class="container">
-  		<ul>
-    		<li>
-      			<input type="checkbox" id="option"><label for="option"> Make money</label>
-      				<ul>
-        				<li><label><input type="checkbox" class="subOption"> To support family/peers</label></li>
-        				<li><label><input type="checkbox" class="subOption"> Achieve my goals/standards and support myself</label></li>
-        				<li><label><input type="checkbox" class="subOption"> Help people</label></li>
-                        <li><label><input type="checkbox" class="subOption"> Prove to people what I can do</label></li>
-      				</ul>
-    		</li>
-  		</ul>
+    	<div class="checkbox-container">
+  			<ul>
+    			<li>
+            		<div class="expandable-checkbox">
+      					<input type="checkbox" class="expandable-checkbox-main-option"> Catch up on missing work</label>
+      						<ul>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> CS 15</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Bio Bases of Psychopathology</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Stats for Bio Sci</label></li>
+                        		<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Web Programming</label></li>
+      						</ul>
+            		</div>
+    			</li>
+    			<li>
+                	<div class="expandable-checkbox">
+      					<input type="checkbox" class="expandable-checkbox-main-option"> Internship in Tokyo for Summer 2023</label>
+      						<ul>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Finish Career Forum Fill Out</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Apply</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Interview</label></li>
+                        		<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Confirm Job Offer/Accept</label></li>
+      						</ul>
+                	</div>
+    			</li>
+    			<li>
+                	<div class="expandable-checkbox">
+      					<input type="checkbox" class="expandable-checkbox-main-option"> Do well in Fall 2022 semester</label>
+      						<ul>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Get Okay Grades</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Do JumboCode</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Get job</label></li>
+                        		<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Make up work</label></li>
+      						</ul>
+    				</div>
+            	</li>
+    			<li>
+                	<div class="expandable-checkbox">
+      					<input type="checkbox" class="expandable-checkbox-main-option"> Take care of myself</label>
+      						<ul>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Skincare</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Eat 3 meals per day</label></li>
+        						<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Enough sleep</label></li>
+                        		<li><label><input type="checkbox" class="expandable-checkbox-sub-option"> Relax</label></li>
+      						</ul>
+    			</li>
+  			</ul>
 		</div>
 	</span>
 </div>
@@ -126,22 +200,39 @@ $(document).ready(function(){
 <br>
 </body>
 <script>
-var checkboxes = document.querySelectorAll('input.subOption'),
-    checkall = document.getElementById('option');
-
-for(var i=0; i<checkboxes.length; i++) {
-  checkboxes[i].onclick = function() {
-    var checkedCount = document.querySelectorAll('input.subOption:checked').length;
-
-    checkall.checked = checkedCount > 0;
-    checkall.indeterminate = checkedCount > 0 && checkedCount < checkboxes.length;
-  }
-}
-
-checkall.onclick = function() {
-  for(var i=0; i<checkboxes.length; i++) {
-    checkboxes[i].checked = this.checked;
-  }
-}
+$(document).ready(function() {
+  //find the wrappers
+  var expandableCheckboxes = document.getElementsByClassName("expandable-checkbox");
+  //loop through the wrappers, count them one by one
+  for (var i = 0; i < expandableCheckboxes.length; i++) (function(i){
+  
+    //find the the main
+    var checkboxMainOption = expandableCheckboxes[i].getElementsByClassName("expandable-checkbox-main-option")[0];
+    //find the subs
+    var checkboxSubOptions = expandableCheckboxes[i].getElementsByClassName("expandable-checkbox-sub-option");
+    //loop through subs
+    for (var k = 0; k < checkboxSubOptions.length; k++) {
+      
+      //add listener fo each sub
+      checkboxSubOptions[k].onclick = function() {
+        var checkedCount = 0;
+        for (var j = 0; j < checkboxSubOptions.length; j++) {
+          if (checkboxSubOptions[j].checked) {
+            checkedCount++;
+          }
+        }
+        //mark appropriately
+        checkboxMainOption.checked = checkedCount > 0;
+        checkboxMainOption.indeterminate = checkedCount > 0 && checkedCount < checkboxSubOptions.length;
+      }
+    }
+    //add listener to main
+    checkboxMainOption.onclick = function() {
+      for (var j = 0; j < checkboxSubOptions.length; j++) {
+        checkboxSubOptions[j].checked = checkboxMainOption.checked;
+      }
+    }
+  })(i)
+});
 </script>
 </html>
